@@ -1,8 +1,11 @@
 package com.stackroute.Domain;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Movie{
     private int id;
     private String movieName;
+    @Autowired
     private Actor actor;
 
 
@@ -10,9 +13,17 @@ public class Movie{
 
     }
 
-    public Movie(int id, String movieName, Actor actor) {
+//    @Autowired
+//    public Movie(Actor actor) {
+//        this.actor = actor;
+//    }
+
+    public Movie(int id, String movieName) {
         this.id = id;
         this.movieName = movieName;
+    }
+
+    public Movie(Actor actor) {
         this.actor = actor;
     }
 
