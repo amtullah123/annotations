@@ -10,15 +10,18 @@ public class SpringBeanConfiguration {
         @Bean(name="Movie.class")
         public Movie getMovie()
         {
-            Actor actor=new Actor();
-            actor.setName("shahrukh");
-            actor.setGender("M");
-            actor.setAge(50);
+//            Actor actor=new Actor();
+//            actor.setName("shahrukh");
+//            actor.setGender("M");
+//            actor.setAge(50);
+//
+//            Movie movie=new Movie();
+//            movie.setMovieName("ddlj");
+//            movie.setId(123);
+//            movie.setActor(actor);
+            Actor actor=new Actor("shahrukh","M",80);
+            Movie movie=new Movie(123,"amtullah", actor);
 
-            Movie movie=new Movie();
-            movie.setMovieName("ddlj");
-            movie.setId(123);
-            movie.setActor(actor);
             return movie;
 
     }

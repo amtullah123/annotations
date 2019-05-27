@@ -13,11 +13,12 @@ public class Main {
 
         Movie movie = (Movie) ctx.getBean("Movie.class");
 
-        System.out.println(movie.getMovieName());
-        System.out.println(movie.getId());
-        System.out.println(movie.getActor().getAge());
-        System.out.println(movie.getActor().getGender());
-        System.out.println(movie.getActor().getName());
+//        System.out.println(movie.getMovieName());
+//        System.out.println(movie.getId());
+//        System.out.println(movie.getActor().getAge());
+//        System.out.println(movie.getActor().getGender());
+//        System.out.println(movie.getActor().getName());
+        System.out.println(movie.toString());
 
     }
 }

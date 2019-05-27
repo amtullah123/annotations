@@ -10,6 +10,12 @@ public class Movie{
 
     }
 
+    public Movie(int id, String movieName, Actor actor) {
+        this.id = id;
+        this.movieName = movieName;
+        this.actor = actor;
+    }
+
     public int getId() {
         return id;
     }
@@ -34,11 +40,12 @@ public class Movie{
         this.actor = actor;
     }
 
-
     @Override
     public String toString() {
         return "Movie{" +
-                "actor=" + actor +
+                "id=" + id +
+                ", movieName='" + movieName + '\'' +
+                ", actor=" + actor +
                 '}';
     }
 }
