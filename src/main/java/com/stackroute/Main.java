@@ -11,6 +11,8 @@ public class Main {
         ctx.refresh();
 
         Movie movie = (Movie) ctx.getBean("Movie.class");
+        System.out.println(movie);
+//        Movie movie = (Movie) ctx.getBean("Movie.class");
 //        System.out.println(movie.getMovieName());
 //        System.out.println(movie.getId());
 //        System.out.println(movie.getActor().getAge());
@@ -20,7 +22,7 @@ public class Main {
 //        System.out.println(actor.getAge());
 //        System.out.println(actor.getGender());
 //        System.out.println(actor.getName());
-        System.out.println(movie.toString());
+//        System.out.println(movie.toString());
 //        Movie movie1 = (Movie) ctx.getBean("Movie1.class");
 //        System.out.println(movie1.getMovieName());
 //        System.out.println(movie1.getId());
