@@ -9,9 +9,10 @@ public class Main {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
         ctx.register(AppConfig.class);
         ctx.refresh();
-
-        Movie movie = (Movie) ctx.getBean("Movie.class");
-        System.out.println(movie);
+        AnnotationConfigApplicationContext c=(AnnotationConfigApplicationContext) ctx;
+        c.destroy();
+//        Movie movie = (Movie) ctx.getBean("Movie.class");
+//        System.out.println(movie);
 //        Movie movie = (Movie) ctx.getBean("Movie.class");
 //        System.out.println(movie.getMovieName());
 //        System.out.println(movie.getId());
